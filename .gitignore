@@ -1,0 +1,14 @@
+.DS_Store
+# Ignorar dependencias
+node_modules/
+jspm_packages/
+
+# Ignorar compilaciones y logs
+dist/
+build/
+*.log
+npm-debug.log*
+
+# Archivos temporales
+*.tmp
+*.temp

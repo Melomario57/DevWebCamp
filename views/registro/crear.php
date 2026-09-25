@@ -55,8 +55,7 @@
     </div>
 </main>
 
-<script src="https://www.paypal.com/sdk/js?client-id=AejBo42_U98O9oVoiSIZ3_qLhxvhnyydKC7fHiirGwr4pTa6w-fIdvlvMJhQUgd2P6SMMQ4rlk9VT6yK&enable-funding=venmo&currency=USD" data-sdk-integration-source="button-factory"></script>
-
+<script src="https://www.paypal.com/sdk/js?client-id=<?php echo $_ENV['PAYPAL_CLIENT_ID']; ?>&enable-funding=venmo&currency=USD" data-sdk-integration-source="button-factory"></script>
 <script>
     function initPayPalButton() {
         paypal.Buttons({

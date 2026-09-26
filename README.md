@@ -56,15 +56,14 @@ Plataforma web para la gestión y registro de asistentes a DevWebCamp, un evento
    DB_NAME=devwebcamp
    ```
 
-5. Genera los recursos del frontend:
+5. Genera los recursos iniciales de estilos e imágenes:
 
    ```bash
    npx gulp css
-   npx gulp js
    npx gulp imagenes
    ```
 
-   Durante el desarrollo puedes dejar Gulp observando cambios con:
+   Durante el desarrollo, deja Gulp observando cambios y compilando también el JavaScript con:
 
    ```bash
    npm run dev

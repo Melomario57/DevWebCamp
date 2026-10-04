@@ -53,6 +53,33 @@
             </div>
         </div>
     </div>
+    <div class="sandbox-demo">
+        <div class="sandbox-demo__header">
+            <span class="sandbox-demo__badge">Modo Sandbox</span>
+            <h4 class="sandbox-demo__titulo">Credenciales de prueba para pago con PayPal</h4>
+        </div>
+        <p class="sandbox-demo__texto">
+            Utiliza la siguiente cuenta de prueba (Buyer) cuando se abra la ventana emergente de PayPal:
+        </p>
+
+        <div class="sandbox-demo__credenciales">
+            <div class="sandbox-demo__campo">
+                <span class="sandbox-demo__label">Email de prueba:</span>
+                <code class="sandbox-demo__valor" id="paypal-email">sb-2i3yu50301910@personal.example.com</code>
+                <button type="button" class="sandbox-demo__btn" onclick="copiarAlPortapapeles('paypal-email', this)">
+                    Copiar
+                </button>
+            </div>
+
+            <div class="sandbox-demo__campo">
+                <span class="sandbox-demo__label">Password:</span>
+                <code class="sandbox-demo__valor" id="paypal-pass">8:g)&lt;hcE</code>
+                <button type="button" class="sandbox-demo__btn" onclick="copiarAlPortapapeles('paypal-pass', this)">
+                    Copiar
+                </button>
+            </div>
+        </div>
+    </div>
 </main>
 
 <script src="https://www.paypal.com/sdk/js?client-id=<?php echo $_ENV['PAYPAL_CLIENT_ID']; ?>&enable-funding=venmo&currency=USD" data-sdk-integration-source="button-factory"></script>
@@ -149,4 +176,20 @@
     }
 
     initPayPalButton();
+
+    function copiarAlPortapapeles(idElemento, boton) {
+        const texto = document.getElementById(idElemento).innerText;
+        navigator.clipboard.writeText(texto).then(() => {
+            const textoOriginal = boton.innerText;
+            boton.innerText = '¡Copiado!';
+            boton.classList.add('copiado');
+            
+            setTimeout(() => {
+                boton.innerText = textoOriginal;
+                boton.classList.remove('copiado');
+            }, 2000);
+        }).catch(err => {
+            console.error('Error al copiar: ', err);
+        });
+    }
 </script>

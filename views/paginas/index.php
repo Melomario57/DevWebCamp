@@ -116,6 +116,6 @@ include_once __DIR__ . '/conferencias.php';
         </div>
     </div>
     <div class="boleto__enlace-contenedor">
-        <a href="'/paquetes" class="boleto__enlace">Ver Paquetes</a>
+        <a href="/paquetes" class="boleto__enlace">Ver Paquetes</a>
     </div>
 </section>

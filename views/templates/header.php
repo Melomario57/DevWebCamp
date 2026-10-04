@@ -17,7 +17,7 @@
                     &#60; DevWebcamp />
                 </h1>
             </a>
-            <p class="header__texto">Octubre 5-6 - 2023</p>
+            <p class="header__texto">Octubre 5-6 - 2027</p>
             <p class="header__texto--modalidad">En Línea - Presencial</p>
             <a href="/registro" class="header__boton">Comprar Pase</a>
         </div>

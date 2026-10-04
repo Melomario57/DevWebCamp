@@ -10,8 +10,8 @@
             </picture>
         </div>
         <div <?php aos_animation(); ?> class="devwebcamp__contenido">
-            <p class="devwebcamp__texto"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut, quia, ipsum exercitationem consequuntur incidunt iusto unde facere aspernatur delectus possimus vitae ratione ex perferendis numquam aliquid rerum facilis doloremque quisquam?</p>
-            <p class="devwebcamp__texto"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut, quia, ipsum exercitationem consequuntur incidunt iusto unde facere aspernatur delectus possimus vitae ratione ex perferendis numquam aliquid rerum facilis doloremque quisquam?</p>
+            <p class="devwebcamp__texto">DevWebCamp es un punto de encuentro para quienes disfrutan crear en la web. Aprende de especialistas, descubre nuevas ideas y mantente al día con las últimas tendencias del desarrollo.</p>
+            <p class="devwebcamp__texto">Vive una experiencia para compartir conocimientos, conectar con otros profesionales y llevar tus proyectos al siguiente nivel.</p>
         </div>
     </div>
 </main>
